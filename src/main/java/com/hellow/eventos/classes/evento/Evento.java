@@ -21,14 +21,14 @@ public class Evento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
+    private String nome;
     private Date data;
     private String descricao;
     private Integer lotacao;
     @ManyToOne
-    @JoinColumn(name="id_endereco")
+    @JoinColumn(name="endereco_id")
     private Endereco endereco_id;
     @ManyToOne
-    @JoinColumn(name="id_tipo")
+    @JoinColumn(name="tipo_id")
     private Tipo tipo_id;
 }

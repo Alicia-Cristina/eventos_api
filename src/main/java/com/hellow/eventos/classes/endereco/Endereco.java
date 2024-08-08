@@ -20,7 +20,7 @@ public class Endereco {
     private Integer id_endereco;
 
     private String logradouro;
-    private String name;
+    private String nome;
     private Integer numero;
     private String cep;
     private String bairro;
@@ -29,7 +29,7 @@ public class Endereco {
     private String pais;
     private String complemento;
     @ManyToOne
-    @JoinColumn(name="id_tipo")
+    @JoinColumn(name="tipo_id")
     private Tipo tipo;
 
 }
