@@ -1,7 +1,5 @@
 package com.hellow.eventos.controller;
 
-import com.hellow.eventos.classes.endereco.Endereco;
-import com.hellow.eventos.classes.endereco.EnderecoRepository;
 import com.hellow.eventos.classes.midia.Midia;
 import com.hellow.eventos.classes.midia.MidiaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

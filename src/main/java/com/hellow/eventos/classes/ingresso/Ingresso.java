@@ -1,4 +1,4 @@
-package com.hellow.eventos.classes.midia;
+package com.hellow.eventos.classes.ingresso;
 
 import com.hellow.eventos.classes.tipo.Tipo;
 import jakarta.persistence.*;
@@ -7,23 +7,26 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name="midia")
-@Table(name="midia")
+
+@Entity(name="ingresso")
+@Table(name="ingresso")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Midia {
+public class Ingresso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
-    private Integer id_midia;
-    private String formato;
-    private Integer duracao;
-    private Integer tamanho;
-    private String link;
+    private Integer id_ingresso;
+
+    private Float valor_base;
+    private Boolean meia;
+    private Boolean social;
+    private Float valor_pago;
+    private Boolean pago;
+    private Boolean vip;
     @ManyToOne
     @JoinColumn(name="tipo_id")
     private Tipo tipo;
-
 }

@@ -1,4 +1,4 @@
-package com.hellow.eventos.controller
+package com.hellow.eventos.controller;
 
 import com.hellow.eventos.classes.endereco.Endereco;
 import com.hellow.eventos.classes.endereco.EnderecoRepository;
