@@ -12,7 +12,6 @@ import java.util.List;
 public class EnderecoController {
     @Autowired
     private EnderecoRepository enderecoRepository;
-
     @GetMapping("todos")
     public List<Endereco> getAllEndereco(){return this.enderecoRepository.findAll(); }
 
