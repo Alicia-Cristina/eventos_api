@@ -22,7 +22,7 @@ public class Ingresso {
 
     private Float valor_base;
     private Boolean meia;
-    private Boolean social;
+    private Boolean socal;
     private Float valor_pago;
     private Boolean pago;
     private Boolean vip;

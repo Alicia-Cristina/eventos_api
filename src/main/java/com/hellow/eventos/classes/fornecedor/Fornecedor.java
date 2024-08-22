@@ -7,8 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name="fornecedor")
-@Table(name="fornecedor")
+@Entity(name="forneceor")
+@Table(name="forneceor")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -16,7 +16,8 @@ import lombok.Setter;
 public class Fornecedor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column Integer id_fornecedor;
+    @Column(name="id")
+    private Integer id_fornecedor;
 
     private String nome;
     private Integer cnpj;
